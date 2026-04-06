@@ -1,0 +1,190 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.app-header {
+  padding: 2rem clamp(1.25rem, 4vw, 3rem) 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+.app-lead {
+  margin: 0;
+  max-width: 42rem;
+  line-height: 1.55;
+  color: var(--color-muted);
+  font-size: 0.98rem;
+}
+
+.app-main {
+  flex: 1;
+  padding: 1.75rem clamp(1.25rem, 4vw, 3rem) 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 56rem;
+}
+
+.panel {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.35rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.panel h2 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.panel-texto {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.panel-hint {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.panel-hint code {
+  font-size: 0.85em;
+  padding: 0.12em 0.35em;
+  border-radius: 6px;
+  background: var(--color-bg-elevated);
+}
+
+.panel-tabla {
+  overflow-x: auto;
+}
+
+.lista-metricas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.lista-metricas li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  background: var(--color-bg-elevated);
+}
+
+.lista-metricas-nombre {
+  font-weight: 500;
+}
+
+.lista-metricas-valor {
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.data-table-wrap {
+  overflow-x: auto;
+  margin: 0 -0.15rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: middle;
+}
+
+.data-table th {
+  font-weight: 600;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  background: var(--color-bg-elevated);
+}
+
+.data-table tbody tr:hover {
+  background: var(--color-row-hover);
+}
+
+.data-table-input {
+  width: 100%;
+  min-width: 8rem;
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font: inherit;
+  color: inherit;
+  background: var(--color-surface);
+}
+
+.data-table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: inherit;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.btn:hover {
+  background: var(--color-bg-elevated);
+  border-color: var(--color-border-strong);
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.app-footer {
+  padding: 1rem clamp(1.25rem, 4vw, 3rem) 1.5rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.app-footer p {
+  margin: 0;
+}
