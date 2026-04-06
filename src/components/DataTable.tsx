@@ -25,7 +25,7 @@ export interface DataTableProps<T> {
  * Tabla genérica de datos con edición en línea.
  * El borrador de edición usa `Partial<T>` porque el usuario puede cambiar solo algunos campos antes de guardar.
  */
-export function DataTable<T extends Record<string, unknown>>({
+export function DataTable<T extends object>({
   datos,
   columnas,
   obtenerClaveFila,
